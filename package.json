@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "vercel-build": "prisma generate && next build"
@@ -13,6 +14,7 @@
     "@prisma/client": "^6.14.0",
     "@supabase/supabase-js": "^2.55.0",
     "next": "15.4.6",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
