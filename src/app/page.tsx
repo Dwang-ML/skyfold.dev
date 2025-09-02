@@ -9,6 +9,7 @@ import prisma from "../lib/prisma";
 
 // Home Page Component
 export default async function HomePage() {
+  console.log("DATABASE_URL", process.env.DATABASE_URL);
   let data: any = [];
   try {
     data = await prisma.user_infos.findMany();
