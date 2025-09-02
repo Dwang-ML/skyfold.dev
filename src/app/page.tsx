@@ -1,5 +1,8 @@
 // app/page.tsx
 
+// Force dynamic rendering
+export const dynamic = "force-dynamic";
+
 // Imports
 import Head from "next/head";
 import Link from "next/link";
