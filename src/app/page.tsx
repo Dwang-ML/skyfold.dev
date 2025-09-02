@@ -25,6 +25,14 @@ export default async function HomePage() {
           notes
         </ul>
 
+        <pre>
+          {JSON.stringify(
+            data,
+            (key, value) => (typeof value === "bigint" ? value.toString() : value),
+            2
+          )}
+        </pre>
+
         <Link href="/account">
           <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">
             Go to Account
