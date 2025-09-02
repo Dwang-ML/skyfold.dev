@@ -5,7 +5,6 @@ export const dynamic = "force-dynamic";
 
 // Imports
 import Head from "next/head";
-import Link from "next/link";
 import prisma from "../lib/prisma";
 
 // Home Page Component
@@ -40,12 +39,6 @@ export default async function HomePage() {
             2
           )}
         </pre>
-
-        <Link href="/account">
-          <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">
-            Go to Account
-          </button>
-        </Link>
       </main>
     </>
   );
