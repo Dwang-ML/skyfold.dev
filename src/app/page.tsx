@@ -10,7 +10,12 @@ import prisma from "../lib/prisma";
 
 // Home Page Component
 export default async function HomePage() {
-  const data = await prisma.user_infos.findMany();
+  let data = [];
+  try {
+    data = await prisma.user_infos.findMany();
+  } catch (err) {
+    console.error("Database fetch failed:", err);
+  }
   return (
     <>
       <Head>
