@@ -10,7 +10,7 @@ import prisma from "../lib/prisma";
 
 // Home Page Component
 export default async function HomePage() {
-  let data = [];
+  let data: any = [];
   try {
     data = await prisma.user_infos.findMany();
   } catch (err) {
