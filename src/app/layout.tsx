@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SkyFold",
   description: "A game developed by DwangML.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+  },
 };
 
 export default function RootLayout({
