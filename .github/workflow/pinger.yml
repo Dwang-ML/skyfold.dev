@@ -1,0 +1,19 @@
+name: Warm-Up Pinger
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+  workflow_dispatch:
+
+jobs:
+  ping1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s https://skyfold.dev/ > /dev/null
+
+  ping2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sleep 30
+          curl -s https://skyfold.dev/ > /dev/null
